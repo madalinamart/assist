@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%;
+    width: 230px;
+    background-color: #347ab4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.sidebar .logo {    
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.sidebar .logo img {
+    width: 50%;
+    height: auto;
+}
+
+.sidebar .side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .side-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 70px;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 230px;
+    height: 40px;
+    width: 100%;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+
+footer p {
+    color: #515356;
+}
+
+
+/* ABOUT PAGE */
+.about-text, .contact{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTACT PAGE */
+form {
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, label {
+    margin: 10px;
+}
+
+form input {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* CARD SECTION */
+
+.cards {
+    position: absolute; 
+    top: 0;
+    left: 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+
+.cards img {
+    width: 30%;
+    height: auto;
+}
